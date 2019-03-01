@@ -1,30 +1,8 @@
 \section{Informacinių technologijų taikymas sveikatos priežiūros įstaigose}
 Eurostat duomenimis \cite{Eurostat}, 2017 metais, 19\% Europos sąjungos populiacijos sudarė 65 metų ir vyresni asmenys. Per paskutinius 10 metų, Lietuvoje 65 metų ir vyresnių asmenų skaičius padidėjo 2,7\%, o Europos sąjungoje - 2,4\%. Populiacijos senėjimo tendencija, pasak Eurostat, nežada keistis ir 2080 metais, 80 metų ir vyresni asmenys sudarys daugiau nei 12\% visos Europos sąjungos populiacjos. Pasak Pasaulio sveikatos organizacijos \cite{Organization2012}, per paskutinius 10 metų, Europos regione sveikatos priežiūros specialistų skaičius padidėjo 10\%, tačiau abejojama ar šis specialistų skaičiaus didėjimas bus pakankamas tam, kad padengtų senstančios populiacjos reikmes. Ši organizaciją kaip didžiausia problemą nurodo slaugytojų trukūmą. Kadangi Europos sąjungos populiacija sensta, specialistų nebeužtenka, vadinasi reikalingas sveikatos priežiūrios procesų efektyvumo didėjimas tam, kad padengtų populiacijus reikmes. Šių procesų efektyvumą galime didinti informacinių technologijų pagalba. Toliau šiame skyriuje apžvelgsime informacinių technologijų taikymą Lietuvos sveikatos priežiūros įstaigose.
 
-
-% add kanors apie lente
-
-\begin{table}[!ht]
-    \centering
-    \renewcommand{\arraystretch}{1.2}
-    \begin{tabular}{| p{8em} | c | c | c |}\hline
-        \backslashbox[8em]{Savybės}{Įstaigos}
-        &\makebox[8em]{KRASPI}&\makebox[8em]{VULZK}&\makebox[8em]{VULSK}\\\hline
-        Duomenų centralizuotas kaupimas &+ &+ &+\\\hline
-        Pacientų valdymas &+ &+ &+\\\hline
-        Duomenų analizavimo įrankiai &- &- &+\\\hline
-        Pacientų sveikatos vertinimas &+ &+ &+\\\hline
-        Finansinių dokumentų paruošimas &- &+ &+\\\hline
-        Lovų užimtumo kontrolė &+ &+ &+\\\hline
-    \end{tabular}
-    \caption{Sveikatos priežiūros įstaigų informacinių sistemų palyginimas}
-\end{table}
-
-
-% Kadangi šio darbo tikslas - (TODO: add tikslas ), šiame poskyryje apžvelgsime Lietuvoje įdiegtą ESPBI IS. Elektroninė sveikatos paslaugų ir bendradarbiavimo infrastruktūros informacinė sistema (toliau - ESPBI IS) yra apibrėžiama kaip priemonių visuma, kuri skirta centralizuotai kaupti, formuoti ir naudoti pacientų sveikatos istorijas \cite{ESPBINuostatos}. Šios sistemos dėka, įstaigos, kurios turi prieigos teises, gali tarpusavyje keistis pacientų informacija. Lietuvoje ESPBI IS buvo diegiama 3 etapais, diegimo datos pradžia - 2007 metai, o pabaiga - 2015 metai \cite{Ministras2015}.
-
 \subsection{Gydymo įstaigų informacinės sistemos}
-Gydymo įstaigų informacinė sistema, kitaip dar vadinama hospitalinė informacinė sistema (toliau - HIS), yra autonominė sveikatos priežiūros įstaigos sistema, kuri orentuojasi į šias veiklas - pacientų registravimas, priėmimas, išleidimas, perkėlimas, apmokestinimas ir kitos administracinės, finansinės ir medicininės funkcijos \cite{Sabooniha2012}. Tam, kad ši sistema išties gerintų sveikatos priežiūros procesų efektyvumą, reikalingas tinkamas duomenų paskirstymas tarp sveikatos priežiūros įstaigos skyrių, todėl šios sistemos pagrindinis uždavinys - apjungti visų skyrių informacines sistemas. Pati HIS nėra laikoma individualaus skyriaus informacine sistema \cite{JuliusGriskevicius}, ji priima duomenis iš skyrių informacinių sistemų ir juos saugo, šių duomenų prireikus betkuriam skyriui, HIS suteikia prieigą prie reikalingų duomenų. Pagrindinės savybės apibūdinančios HIS \cite{JuliusGriskevicius}: 
+Gydymo įstaigų informacinė sistema, kitaip dar vadinama hospitalinė informacinė sistema (toliau - HIS), yra autonominė sveikatos priežiūros įstaigos sistema, kuri orentuojasi į šias veiklas - pacientų registravimas, priėmimas, išleidimas, perkėlimas, apmokestinimas ir kitos administracinės, finansinės ir medicininės funkcijos \cite{Sabooniha2012}. Tam, kad ši sistema išties gerintų sveikatos priežiūros procesų efektyvumą, reikalingas tinkamas duomenų paskirstymas tarp sveikatos priežiūros įstaigos skyrių, todėl šios sistemos pagrindinis uždavinys - apjungti visų skyrių informacines sistemas. Pati HIS nėra laikoma individualaus skyriaus informacine sistema \cite{JuliusGriskevicius}, ji priima klinikinius duomenis iš įstaigos skyrių informacinių sistemų ir juos saugo. Sveikatos priežiūros įstaigos specialistam prireikus pacientų klinikinių duomenų, HIS suteikia prieigą prie jų. Pagrindinės savybės apibūdinančios HIS \cite{JuliusGriskevicius}: 
 \begin{enumerate}
     \item Informacijos apie pacientus duomenų bazės;
     \item Pacientų priėmimas ir lovų užimtumo kontrolė;
@@ -33,11 +11,32 @@ Gydymo įstaigų informacinė sistema, kitaip dar vadinama hospitalinė informac
 \end{enumerate}
 
 
+Tam, kad suprasti Lietuvos sveikatos priežiūros įstaigų naudojamų informacinių sistemų savybes ir funkcionalumus, autorius pasirinko išanalizuoti trijų sveikatos įstaigų HIS. Buvo pasirinkta Kauno regiono asmens sveikatos priežiūros įstaigų HIS (toliau - KRASPI), nes šią HIS naudoja Jonavos ligoninė ir Vilniaus universiteto ligoninės Žalgirio klinikos HIS (toliau - VULZK HIS). Šios dvi HIS buvo pasirinktos todėl, nes įstaigos, naudojančios šias HIS, buvo pasirinkos stacionaraus gydymo nagrinėjimui ankstesniame skyriuje. Taip pat buvo pasirinkta nagrinėti Vilniaus universiteto ligoninės Santaros klinikos HIS (toliau - VULSK HIS), nes tai yra viena iš didžiausių Lietuvos sveikatos priežiūros įstaigų. Išanalizavimus šių įstaigų HIS specifikacijas, buvo sudaryti palyginimo lentelė (žiūrėti 1 lentelę). 
+
+\begin{table}[!ht]
+    \centering
+    \renewcommand{\arraystretch}{1.2}
+    \begin{tabular}{| p{8em} | c | c | c |}\hline
+        \backslashbox[8em]{Savybės}{Įstaigos}
+        &\makebox[8em]{KRASPI}&\makebox[8em]{VULZK HIS}&\makebox[8em]{VULSK HIS}\\\hline
+        Duomenų centralizuotas kaupimas &+ &+ &+\\\hline
+        Pacientų valdymas &+ &+ &+\\\hline
+        Duomenų analizavimo įrankiai &- &- &+\\\hline
+        Pacientų sveikatos vertinimas &+ &+ &+\\\hline
+        Finansinių dokumentų paruošimas &- &+ &+\\\hline
+        Lovų užimtumo kontrolė &+ &+ &+\\\hline
+    \end{tabular}
+    \caption{Sveikatos priežiūros įstaigų informacinių sistemų palyginimas}
+    \label{HIS}
+\end{table}
+
+Atlikus palyginimą, buvo išsiaiškinta, kad visos nagrinėjamos HIS pasižymi panašiomis savybės ir sprendžia bendras problemas, tačiau tiek Jonavos ligoninės naudojamame HIS, tiek Žalgirio klinikos HIS, trūksta duomenų analizavimo įrankių, taip pat KRASPI nėra finansinių dokumentų paruošimo funkcionalumo.
+
 % &\makebox[8em]{Kauno regiono asmens sveikatos priežiūros įstaigų}&\makebox[8em]{Vilniaus universiteto ligonin4s Santariškių klinikos}&\makebox[8em]{Vilniaus universiteto ligoninės Žalgirio klinika}\\\hline
 
-
-\subsection{ESPBI IS apžvalga}
- Kadangi ESPBI IS yra didelės apimties projektas, kuris truko beveik dešimtmetį, dalykinės srities reikalavimai buvo klasifikuojamas ir kuriami mažesni projektai šiems reikalavimams įgyvendinti. Pagrindiniai ESPBI IS projektai \cite{Ltrsam}:
+\subsection{Elektroninė sveikatos paslaugų ir bendradarbiavimo infrastruktūros informacinė sistema}
+\subsubsection{Sistemos apžvalga}
+Ankstesniame poskyryje apžvelgėme gydymo įstaigų informacines sistemas, tačiau pacientams ne visada sveikatos priežiūros paslaugos teikiamos vienoje gydymo įstaigoje. Pacientus gydymo įstaigą, iškyla problema - klinikinių paciento duomenų perkėlimas. Šia problemą išsprendžia visos Lietuvos mąstu naudojama elektroninė sveikatos paslaugų ir bendradarbiavimo infrastruktūros informacinė sistema (toliau - ESPBI IS). ESPBI IS yra apibrėžiama kaip priemonių visuma, kuri skirta centralizuotai kaupti, formuoti ir naudoti pacientų sveikatos istorijas \cite{ESPBINuostatos}. Šios sistemos dėka, įstaigos, kurios turi prieigos teises, gali tarpusavyje keistis pacientų informacija. Lietuvoje ESPBI IS buvo diegiama 3 etapais, diegimo datos pradžia - 2007 metai, o pabaiga - 2015 metai \cite{Ministras2015}. Kadangi ESPBI IS yra didelės apimties projektas, kuris truko beveik dešimtmetį, dalykinės srities reikalavimai buvo klasifikuojamas ir kuriami mažesni projektai šiems reikalavimams įgyvendinti. Pagrindiniai ESPBI IS projektai \cite{Specifikacija}:
 \begin{enumerate}
     \item \textbf{Elektroninės sveikatos paslaugų ir bendradarbiavimo infrastruktūra}.
     
@@ -90,26 +89,34 @@ Sveikatinimo įstaigų atžvilgiu ESPBI IS paskirtis yra:
     \item Užtikrinti priegą prie centralizuotos informacijos.
 \end{itemize}
 
-Apibendrinant išvardintas šios sistemos paskirtis, galima teigti, kad siekiama, jog pacientas turėtų galimybę peržiūrėti savo sveikatos istoriją elektroniniu būdų, o įstaigos, efektyviai keistūsi paciento informacija ir ja naudotų tam, kad paslaugų kokybė gerėtų.
+Apibendrinant išvardintas šios sistemos paskirtis, galima teigti, kad siekiama, jog pacientas turėtų galimybę peržiūrėti savo sveikatos istoriją elektroniniu būdų, o įstaigos, efektyviai keistūsi paciento informacija ir ją naudotų tam, kad paslaugų kokybė gerėtų.
 
-\subsection{ESPBI IS architektūra}
+\subsubsection{Sistemos architektūra}
+
+Pagal ESPBI IS specifikaciją \cite{Specifikacija} autorius parengė abstrakčią ESPBI IS architektūros diagramą (žiūrėti 1 pav.). 
 
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=0.35]{images/ESPBI}
-    \caption{Elektroninės sveikatos paslaugų ir bendradarbiavimo infrastruktūros informacinės sistemos achitektūra}   % Antraštė įterpiama po paveikslėlio
-    \label{img:ESPBI}
+    \includegraphics[scale=0.45]{images/ESPBI}
+    \caption{Elektroninės sveikatos paslaugų ir bendradarbiavimo infrastruktūros informacinės sistemos achitektūra} 
 \end{figure}
+% perpiesti, reikia prideti esi posisteme
 
 
+Pagal parengtos architektūros diagramą matome, kad architektūra yra 3 lygmenų - vaizdavimo ir paslaugų, veiklos logikos ir duomenų lygmens. Išnagrinėkime šiuos tris lygmenis: 
 
-
-
-
-
-
-
-
+\begin{itemize}
+    \item \textbf{Vaizdavimo ir paslaugų lygmuo}. Šį lygmenį sudaro elektroninės sveikatos portalo posistemė. Šio portalo paskitis - medicinių paslaugų iniciavimas, šių paslaugų informavimas, jų vykdymo stebėjimas ir suteiktų paslaugų rezultatų pateikimas.
+    informavimui/komunikavimui ir rezultatų pateikimui \cite{Specifikacija}. Šios sistemos naudotojai yra identifikuojami elektroniniu parašu. Prisijungusiam naudotojui yra pateikiamas turinys pagal identifikavimo metu suteiktas prieigas. Elektroninė sveikatos portalo posistemė susideda iš 4 sričių:
+    \begin{enumerate}
+        \item Viešai prieinama sritis. Šioje elektroninės sveikatos portalo srityje yra pateikiama visiem prienama informacija. Tam, kad naudotojas pasiektų šią informaciją, jam savo tapatybės identifikuoti nereikia;
+        \item Pacientų sritis. Šioje elektroninės sveikatos portalo srityje yra pateikiama pacieto gautų paslaugų informacija, rezultatai, išrašytų elektroninių receptų duomenys ir kt;
+        \item Sveikatos priežiūros specialistų sritis. Šioje elektroninės sveikatos portalo srityje yra sveikatos priežiūros specialistai gali pildyti elektroninės sveikatos priežiūros formas, tvarkyti pacientų duomenis, gauti aktualus paciento klinikinius duomenis, medicininius vaizdus, taip pat specialistas, turintis reikiamą prieiga, gali išrašyti pacientui elektroninė receptą, pratęsti jo galiojimo terminą,
+        \item Farmacijos specialistų sritis; Ši elektroninės sveikatos portalo sritis yra skirta farmacijos specialistam. Ji leidžia naudotojam gauti informaciją apie išrašyti elektroninį receptą ir patvirtinti vaistų ar medicinių pagalbos priemonių išdavimo faktą.
+    \end{enumerate}
+    \item \textbf{Veiklos logikos lygmuo}. 
+    \item Duomenų lygmuo;
+\end{itemize}
 
 % issiaiskinti del ruklos, kam ji priklauso ( Jei priklauso kazkam is saraso, galim prideti saltini prie hospitalisation.tex)
 % neiasku del duomenu baziu, lape raso, kad ji viena yra, o realiai ju daug
