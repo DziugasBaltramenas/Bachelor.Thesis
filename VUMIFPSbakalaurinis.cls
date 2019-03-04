@@ -132,7 +132,6 @@
         {\begin{tabular}[t]{l l}%
         \bigskip Atliko: &\; \@author \hfill \@signatureplace \\
         \bigskip Darbo vadovas: &\; \@supervisor \hfill  \@signatureplace \\
-        Darbo recenzentas: &\; \@reviewer \hfill \@signatureplace
         \end{tabular} \par}%
      \end{flushright}
      \vskip 4cm
@@ -233,14 +232,14 @@
   \fi}
 
 
-% Sekcija pradeda naują puslapį
-\renewcommand{\section}{%
-    \cleardoublepage%
-    \@startsection {section}{1}{\z@}%
-        {-3.5ex \@plus -1ex \@minus -.2ex}%
-        {2.3ex \@plus.2ex}%
-        {\normalfont\Large\bfseries}%
-}
+% % Sekcija pradeda naują puslapį
+% \renewcommand{\section}{%
+%     \cleardoublepage%
+%     \@startsection {section}{1}{\z@}%
+%         {-3.5ex \@plus -1ex \@minus -.2ex}%
+%         {2.3ex \@plus.2ex}%
+%         {\normalfont\Large\bfseries}%
+% }
 
 % Priedo sekcijų formatavimas turiniui
 \renewcommand{\appendix}{%
