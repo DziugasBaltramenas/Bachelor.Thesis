@@ -1,5 +1,5 @@
 build:
-	xelatex -interaction=nonstopmode thesis.tex;
-	biber thesis
-	xelatex -interaction=nonstopmode thesis.tex;
-	rm thesis.aux thesis.bcf thesis.log thesis.run.xml thesis.toc thesis.fdb_latexmk thesis.fls thesis.blg thesis
+	xelatex -interaction=nonstopmode practice.tex;
+	biber practice
+	xelatex -interaction=nonstopmode practice.tex;
+	rm practice.aux practice.bcf practice.log practice.run.xml practice.toc practice.fdb_latexmk practice.fls practice.blg practice
