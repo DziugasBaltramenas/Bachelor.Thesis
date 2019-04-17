@@ -1,0 +1,43 @@
+\section{Sistemos projektavimas}
+
+\subsection{Reikalavimų surinkimas}
+
+\subsubsection{Funkciniai reikalavimai}
+
+Funkciniai reikalavimai yra surinkti remiantis dalykinės srities analize ir identifikuotomis stacionaraus gydymo problemomis.
+\begin{itemize}
+    \item [FR.1] Sistemos vidiniai naudotojai yra autorizuojami;
+    \item [FR.2] Sistemos funkcionalumo aibė yra filtruojama pagal naudotojo rolę (pvz.: gydytojai gali paskirti gydymą, jį keisti, tačiau slaugytojai gali tik vykdyti paskirtą gydymą, jie negali koreguoti gydymo plano);
+    \item [FR.3] Pacientai yra identifikuojami ESPBI IS pagalba;
+    \item [FR.4] Sveikatos įstaigos darbuotojas, kuris turi atitinkamą rolę, gali sukurti gydymo planą;
+    \item [FR.5] Kiekviena sąveika tarp slaugytojo ir paciento, kuri yra nurodyta gydymo plane, yra fiksuojama ir saugoma;
+    \item [FR.6] Sveikatos įstaigos darbuotojas, kuris suteikė bet kokią sveikatos paslaugą, yra identifikuojamas;
+    \item [FR.7] Suteikta sveikatos paslauga yra identifikuojama;
+    \item [FR.8] Pacientui suteikiamų medikamentų tinkamumo verifikavimas, t.y. patikrinimas ar suteikiamas medikamentas yra nurodytas gydymo plane ir neįvyko klaida;
+    \item [FR.9] Paciento būklės duomenys, gauti suteikiant sveikatos paslaugą, yra fiksuojami ir saugomi;
+    \item [FR.10] Formos, reikalingos stacionariame gydyme, yra pildomos sistemoje automatiškai, užpildant formą duomenimis, kurie buvo fiksuoti gydymo metu;
+    \item [FR.11] Formos valdymo veiksmus gali atlikti tik tie darbuotojai, kurie turi valdymo veiksmams atlikti reikalingas roles, t.y. slaugytojai gali redaguoti tik su jais susijusius įvestus duomenis, tačiau gydytojai gali redaguoti visus įvestus duomenis;
+    \item [FR.12] Duomenų mainuose su centralizuota duomenų baze yra naudojamas HL7 formatas;
+    \item [FR.13] Sistemoje sekamas lovų užimtumo lygis;
+\end{itemize}
+
+\subsubsection{Nefunkciniai reikalavimai}
+Nefunkciniai reikalavimai yra surinkti remiantis dabartinių sveikatos įstaigų naudojamomis informacinėmis sistemomis ir literatūra, kuri susijusi su NFC ir sveikatos priežiūra. Surinkti nefunkciniai reikalavimai apima šiuos reikalavimas:
+\begin{itemize}
+    \item Saugumo ir slaptumo reikalavimai;
+    \item Ergonominiai reikalavimai;
+    \item Prieinamumo ir patikimumo reikalavimai;
+    \item Plečiamumo reikalavimai;
+\end{itemize}
+
+\begin{itemize}
+    \item [NFR.1] Vartotojo sąsaja turi būti pritaikyta neįgaliesiems pagal „Web Content Accessibility Guidelines 1.0“ pasiūlymus;
+    \item [NFR.2] Vartotojo sąsaja turi būti daugiakalbė;
+    \item [NFR.3] Klaidų pranešimai formuojami taip, kad vartotojui būtų aiškų kokių veiksmų imtis;
+    \item [NFR.4] Sistemos integracija į skirtingų sveikatos įstaigų informacines sistemas neturi būti sudėtinga;
+    \item [NFR.5] Sistemos našumo plėtimas, gerinant ar didinant techninius išteklius, neturi būti sudėtingas, našumo plėtimas neturi reikalauti kodo keitimo.
+    \item [NFR.6] Sistema turi veikti pagal principą „24 valandos per dieną, 7 dienos per savaitę, 365 dienos per metus“;
+    \item [NFR.7] Sistemos, kuri susidūrė susidūrė su sutrikimais, reikalaujančiais sistemos paleidimo iš naujo, prastovos laikas negali viršyti 3 valandų;
+    \item [NFR.8] Sistemos, kuri susidūrė susidūrė su sutrikimais, reikalaujančiais sistemos diegimo iš naujo, prastovos laikas negali viršyti 6 valandų;
+    \item [NFR.9] Identifikavimo informacija turi būti šifruojama;
+\end{itemize}
