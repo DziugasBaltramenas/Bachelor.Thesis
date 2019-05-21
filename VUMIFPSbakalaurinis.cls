@@ -182,13 +182,19 @@
   \global\let\checkifdefined\relax
   \setcounter{footnote}{0}%
   % Nustatome dokumentui 1,5 eilutės intervalą
-  \onehalfspacing
+%   \onehalfspacing
+\spacing{1.45}
 }
 
 % Skyriaus pavadinimas, turinyje neturintis numerio
 \newcommand{\sectionnonum}[1]{%
     \section*{#1}%
     \addcontentsline{toc}{section}{#1}% 
+}
+
+\newcommand{\subsectionnonum}[1]{%
+    \subsection*{#1}%
+    \addcontentsline{toc}{subsection}{#1}% 
 }
 
 % Skyriaus pavadinimas, neturintis numerio bei neįeinantis į turinį
