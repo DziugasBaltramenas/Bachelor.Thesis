@@ -26,6 +26,8 @@ Lentelėje (žiūrėti 2 lentelę) pateikiamas aktyvios ir pasyvius žymos palyg
 \begin{table}[H]
     \centering
     \renewcommand{\arraystretch}{1,2}
+    \caption{Aktyvios ir pasyvios RFID žymos palyginimas}
+
     \begin{tabular}{| p{10em} | p{12em} | p{12em} |}\hline
         \backslashbox[10em]{Ypatybės}{Tipai}
         &\makebox[12em]{Aktyvus}&\makebox[12em]{Pasyvus}\\\hline
@@ -38,7 +40,6 @@ Lentelėje (žiūrėti 2 lentelę) pateikiamas aktyvios ir pasyvius žymos palyg
         Dydis & Dydis priklauso nuo maitinimo šaltinio dydžio & Mažas \\\hline
         Kaina & Brangesnis nei pasyvus & Brangesnis nei aktyvus \\\hline
     \end{tabular}
-    \caption{Aktyvios ir pasyvios RFID žymos palyginimas}
 \end{table}
 
 RFID technologijos charakteristikos nėra pastovios, šios technologijos savybėm didžiausią įtaką daro parinktas elektromagnetinės bangos dažnis, kuris yra naudojamas komunikavimui tarp skaitytuvo ir žymos, todėl kuriant sistemą, kuri yra paremta RFID technologija, svarbu pasirinkti tinkamą bangos dažnį. RFID technologijos naudojami elektromagnetinių bangų dažniai: kilometrinės bangos žemieji dažniai (toliau - ŽD), dekametrinės bangos aukštieji dažniai  (toliau - AD), decimetrinės bangos ultra aukšti dažniai (toliau - UAD) ir mikrobangų dažniai. Šių dažnių naudojimą RFID sistemose aprašo ISO ir IEC standartai. Elektromagnetinių bangų dažniai daro įtaką šioms RFID savybės \cite{Hunt2006}:
@@ -52,6 +53,7 @@ RFID technologijos charakteristikos nėra pastovios, šios technologijos savybė
 
 \begin{table}[!ht]
     \centering
+    \caption{Aktyvaus ir pasyvaus RFID komunikavimo tipų palyginimas}
     \renewcommand{\arraystretch}{1,5}
     \begin{tabular}{m{9em}m{8em}m{8em}m{8em}} 
         \hline
@@ -68,7 +70,6 @@ RFID technologijos charakteristikos nėra pastovios, šios technologijos savybė
         Mikrobangos                       & 2.45 ir 5.8 GHz         & Pasyvus ir Aktyvus &  ISO 18000-4  \\
         \hline
     \end{tabular}
-    \caption{Aktyvaus ir pasyvaus RFID komunikavimo tipų palyginimas}
 \end{table}
 
 \subsection{Artimojo lauko ryšio}
@@ -111,6 +112,7 @@ Informacijos lauko dydį NDEF įraše nusako antraštės informacijos dydžio la
 
 \begin{table}[!ht]
     \centering
+    \caption{NDEF žinutės įrašas \cite{NFCForum2006} }
     \renewcommand{\arraystretch}{1,7}
     \begin{tabular}{C{2em}C{2em}C{2em}C{2em}C{2em}C{2em}C{2em}C{2em}l}
         7                         & 6                        & 5                       & 4                       & 3                       & 2 & 1 & 0                 &                        \\ 
@@ -132,7 +134,6 @@ Informacijos lauko dydį NDEF įraše nusako antraštės informacijos dydžio la
         \multicolumn{8}{|c|}{}                                                                                                                                         &                        \\
         \cline{1-8}
     \end{tabular}
-    \caption{NDEF žinutės įrašas \cite{NFCForum2006} }
 \end{table}
 
 \subsubsection{Darbo rėžimai}

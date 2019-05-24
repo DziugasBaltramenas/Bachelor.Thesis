@@ -31,14 +31,35 @@
 \status{4 kurso 5 grupės studentas}
 \author{Džiugas Baltramėnas}
 \supervisor{lekt. Karolis Uosis}
+\reviewer{dr. Tomas Plankis}
 \date{Vilnius – \the\year}
 
 % Nustatymai
-%\setmainfont{Time}   % Pakeisti teksto šriftą į Palemonas (turi būti įdiegtas sistemoje)
+% \setmainfont{Palemonas}   % Pakeisti teksto šriftą į Palemonas (turi būti įdiegtas sistemoje)
 \bibliography{bibliografija}
 
 \begin{document}
+
+
+
+\newpage
+
+
 \maketitle
+
+
+\section*{Santrauka}
+Bakalauro probleminė sritis - suteikiamų stacionaraus gydymo paslaugų mažas efektyvumas. Dėl intuityvaus naudojimo ir nedidelių kaštų, gydymo paslaugų efektyvumui didinti siūloma naudoti artimojo lauko ryšio technologiją. Šis darbas yra skirtas stacionaraus gydymo problemoms spręsti, pasitelkiant artimojo lauko ryšio technologiją. Šis darbas darbas nagrinėja sveikatos priežiūros įstaigas, jų informacinės sistemos. Atlikus sveikatos priežiūros įstaigos analizę ir identifikavus kylančias problemas, pasiūloma programų sistemų architektūra, kuri yra paremta artimojo lauko ryšio technologija, bei pateikiamos architektūros alternatyvos. Įsitikinimui, kad siūlomą programų sistemų architektūrą įmanoma įgyvendinti, sukuriamas sistemos prototipas.
+
+
+\paragraph{Raktiniai žodžiai}artimojo lauko ryšys, ALR, stacionarus gydymas, sveikatos priežiūra, stacionaraus gydymo problemos, programų sistemų architektūra.
+
+
+
+\section*{Summary}
+Area of concern of this bachelor thesis is the low efficiency of inpatient treatment services. Due to its intuitive usage and low cost of production, near field communication technology can be the solution to increase the efficiency of inpatient treatment services. This paper is intended to solve identified problems of inpatient treatment with the help of near field communication technology. Futhermore, the paper examines health care institutions and their information systems. Following the analysis of health care institutions and problems, regarding inpatient treatment services, a near field communication technology based system architecture is proposed. A prototype is created to validate the proposed system architecture.
+
+\paragraph{Keywords}near field communication, NFC, inpatient treatment, health care, inpatient treatment problems, software architecture.
 
 \tableofcontents
 
@@ -53,30 +74,10 @@
 \include{sections/nfc}
 
 \include{sections/system}
-% \sectionnonum{Rezultatai ir išvados}
 
-% Atlikus darbą buvo gauti šie \textbf{rezultatai}:
-% \begin{enumerate}
-%     \item -;
-%     \item -;
-%     \item -;
-%     \item -.
-% \end{enumerate}
+\include{sections/results}
 
-% Darbo \textbf{išvados}:
-% \begin{enumerate}
-%     \item -;
-%     \item -;
-%     \item -;
-%     \item -.
-% \end{enumerate}
-
-\printbibliography[heading=bibintoc]  % Šaltinių sąraše nurodoma panaudota
-% literatūra, kitokie šaltiniai. Abėcėlės tvarka išdėstomi darbe panaudotų
-% (cituotų, perfrazuotų ar bent paminėtų) mokslo leidinių, kitokių publikacijų
-% bibliografiniai aprašai.  Šaltinių sąrašas spausdinamas iš naujo puslapio.
-% Aprašai pateikiami netransliteruoti. Šaltinių sąraše negali būti tokių
-% šaltinių, kurie nebuvo paminėti tekste.
+\printbibliography[heading=bibintoc]  
 
 
 \appendix 
